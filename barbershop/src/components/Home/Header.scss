@@ -1,0 +1,38 @@
+.headerWrapper {
+    //border: 1px solid red;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        width: 200px;
+    }
+
+    nav {
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 800px;
+            //border: 1px solid blue;
+            padding: 0;
+            li {
+                display: inline-block;
+                
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-size: 24px;
+                }
+
+                a:hover {
+                    text-shadow: 2px 2px 2px black;
+                    color: lightgray;
+                    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+                }
+            }
+        }
+    }
+}
