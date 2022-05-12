@@ -3,9 +3,26 @@
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url("../../assets/bg.png");
+    background-size: contain;
 
     .reviewGuy {
         border-radius: 50%;
+    }
+
+    .nameWithReview {
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 32px;
+            letter-spacing: 5px;
+        }
+
+        p::before, p::after {
+            content: "'";
+        }
     }
 }
 
@@ -16,15 +33,24 @@
     overflow: visible;
 }
 
+.carousel .slide img {
+    box-shadow: 0 6px 4px grey;
+}
+
 li.slide {
     display: flex;
     justify-content: center;
     padding: 0 40px;
+    opacity: 0.5;
+    min-width: 78% !important;
 }
 
 li.slide.selected.previous {
+    opacity: 1;
 }
 
 li.slide.selected {
+    opacity: 1;
+    min-width: 100% !important;
 }
 

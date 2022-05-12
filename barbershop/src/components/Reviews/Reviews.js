@@ -54,16 +54,22 @@ export default function Reviews() {
     <div className='reviewPart'>
         <Carousel 
         width={600}
-        centerMode="true"
-        infiniteLoop="true"
-        emulateTouch="true"
+        centerMode={true}
+        infiniteLoop={true}
+        emulateTouch={true}
         selectedItem={3}
         showArrows={false}
         thumbWidth={60}
+        showStatus={false}
+        showIndicators={false}
         >
                 {images.map((index) => (
                     <div>
                         <img src={index.url} key={index} alt={index.boyName} className="reviewGuy"></img>
+                        <div className='nameWithReview'>
+                            <h3>{index.boyName}</h3>
+                            <p>{index.reviewText}</p>
+                        </div>
                     </div>
                 ))}
 
