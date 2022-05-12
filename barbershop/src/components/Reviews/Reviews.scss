@@ -1,0 +1,30 @@
+.reviewPart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+
+    .reviewGuy {
+        border-radius: 50%;
+    }
+}
+
+
+
+/* from carousel class */
+.carousel .slider-wrapper, .carousel.carousel-slider {
+    overflow: visible;
+}
+
+li.slide {
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+li.slide.selected.previous {
+}
+
+li.slide.selected {
+}
+
