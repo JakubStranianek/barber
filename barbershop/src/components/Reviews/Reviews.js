@@ -53,15 +53,17 @@ export default function Reviews() {
   return (
     <div className='reviewPart'>
         <Carousel 
-        width={600}
+        width={window.innerWidth > 595 ? 600 : 350}
         centerMode={true}
-        infiniteLoop={true}
-        emulateTouch={true}
+        infiniteLoop={window.innerWidth > 595 ? true : false}
+        emulateTouch={window.innerWidth > 595 ? true : false}
         selectedItem={3}
-        showArrows={false}
+        showArrows={window.innerWidth > 595 ? false : true}
         thumbWidth={60}
         showStatus={false}
         showIndicators={false}
+        swipeable={window.innerWidth > 595 ? true : false}
+        showThumbs={window.innerWidth > 595 ? true : false}
         >
                 {images.map((index) => (
                     <div>

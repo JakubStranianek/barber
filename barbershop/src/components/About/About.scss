@@ -29,6 +29,7 @@
         width: 85%;
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
 
         img {
             width: 400px;
@@ -93,4 +94,81 @@
             }
         }
     }
+}
+
+
+
+@media only screen and (max-width: 595px) {
+    .about-part {
+        
+       
+        .aboutHeading {
+            
+    
+            .line {
+               
+            }
+    
+            h3 {
+            }
+        }
+    
+        .small-gallery {
+            
+    
+            img {
+                width: 350px;
+                margin-bottom: 40px;
+            }
+    
+            img:hover {
+                
+            }
+        }
+    
+        .about-text-content {
+            
+    
+            p {
+                
+            }
+        }
+    
+        .our-barber {
+           
+    
+            img {
+                width: 100%;
+            }
+    
+            .nameOfBarber {
+    
+                h2 {
+                   
+                }
+    
+                h2:nth-Child(1) {
+                   display: none;
+                }
+    
+                h2:nth-Child(2) {
+                   display: none;
+                }
+            }
+        }
+    }
+}
+ 
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    
 }

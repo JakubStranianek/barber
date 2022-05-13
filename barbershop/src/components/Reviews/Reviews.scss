@@ -54,3 +54,40 @@ li.slide.selected {
     min-width: 100% !important;
 }
 
+
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    .carousel-root {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .carousel.carousel.carousel-slider {
+        overflow: hidden;
+    }
+
+    .carousel.carousel-slider .control-arrow {
+        background-color: rgba(0,0,0, 0.5);
+        top: 70%;
+        height: min-content;
+        width: 40px;
+
+    }
+}
+ 
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    
+}

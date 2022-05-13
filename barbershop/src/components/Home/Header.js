@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from "../../assets/logo.png"
 import "./Header.scss"
 import {Link} from "react-router-dom"
+import navbar from "../../assets/hamburger.png"
 
 export default function Header() {
   return (
@@ -17,6 +18,8 @@ export default function Header() {
                 <li><Link to="/kontakt">KONTAKT</Link></li>
             </ul>
         </nav>
+
+        <img src={navbar} alt="navbarIcon" />
     </div>
   )
 }

@@ -57,3 +57,58 @@
         padding-bottom: 80px;
     }
 }
+
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    .priceList-part {
+
+        .priceList-Header{
+            flex-direction: column;
+            img {
+               width: 80px;
+            }
+            h3 {
+              
+            }
+        }
+    
+        .priceList {
+           
+    
+            .price {
+               
+    
+                h3 {
+                    font-size: 22px;
+                }
+    
+                .priceRow {
+                    align-items: end;
+                    
+                    .separator{
+                        visibility: hidden;    
+                    }
+                }
+            }
+        }
+    
+        .line {
+        
+        }
+    }
+}
+ 
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    
+}

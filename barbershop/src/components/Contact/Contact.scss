@@ -81,3 +81,91 @@
         }
     }
 }
+
+
+
+@media only screen and (max-width: 595px) {
+    .contactPart {
+        
+        iframe {
+           
+        }
+    
+        .photoOfBarberShop {
+           display: none;
+        }
+    
+        .flexContact {
+            width: 100%;
+            flex-direction: column;
+            .adress {
+                margin-left: 40px;
+    
+                h6 {
+                    font-size: 28px;
+                }
+
+                p {
+                    font-size: 20px;
+                    letter-spacing: 3px;
+                }
+            }
+    
+            .contact {
+                margin-left: 40px;
+    
+                h6 {
+                    font-size: 28px;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+            } 
+        }
+    
+        .socialSites {
+            
+            
+            img {
+               
+            }
+    
+            img:hover {
+                
+            }
+            
+            p {
+                
+            }
+    
+            p::before {
+               
+            }
+        }
+    
+        #copyright {
+            width: 90%;
+margin-right: auto;
+margin-left: auto;
+font-size: 11px;
+            p {
+                
+            }
+        }
+    }
+}
+ 
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    
+}
