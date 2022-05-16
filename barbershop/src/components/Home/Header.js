@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from "../../assets/logo.png"
 import "./Header.scss"
 import {Link} from "react-router-dom"
-import navbar from "../../assets/hamburger.png"
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Header() {
   return (
@@ -19,7 +19,7 @@ export default function Header() {
             </ul>
         </nav>
 
-        <img src={navbar} alt="navbarIcon" />
+        <MenuIcon/>
     </div>
   )
 }

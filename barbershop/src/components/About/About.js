@@ -1,12 +1,39 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./About.scss"
 import gallery1 from "../../assets/gallery1.JPG"
 import gallery2 from "../../assets/gallery2.JPG"
 import gallery3 from "../../assets/gallery3.JPG"
 import paint from "../../assets/paint.png"
 
+
+import CloseIcon from '@mui/icons-material/Close';
+
+const galleryData = [
+    {
+        id: 1, 
+        url: gallery1
+    },
+    {
+        id: 2, 
+        url: gallery2
+    },
+    {
+        id: 3, 
+        url: gallery3
+    },
+] 
+
+
 export default function About() {
-  return (
+    const [model, setModel] = useState(false);
+    const [tempImgSrc, setTempImgSrc] = useState("");
+
+    const getImg = (imgSrc) => {
+        setTempImgSrc(imgSrc);
+        setModel(true);    
+    }
+
+    return (
     <div className='about-part'>
         <div className='aboutHeading'>
             <div className='line'></div>
@@ -14,18 +41,19 @@ export default function About() {
             <div className='line'></div>
         </div>
 
+        <div className={model ? "model open" : "model"}>
+            <img src={tempImgSrc} alt="showPhoto"></img>
+            <CloseIcon onClick={() => setModel(false)}/>
+        </div>
+
         <div className='small-gallery'>
-            <div className='image1'>
-                <img src={gallery1} alt='img1'></img>
-            </div>
-
-            <div className='image2'>
-                <img src={gallery2} alt='img2'></img>
-            </div>
-
-            <div className='image3'>
-                <img src={gallery3} alt='img3'></img>
-            </div>
+            {
+                galleryData.map(index => 
+                    <div className={"image" + index.id} key={"barbershop" + index.id} onClick={() => getImg(index.url)}>
+                        <img src={index.url} alt={"img" + index.id} onClick=""></img>
+                    </div>
+                )
+            }
         </div>
 
         <div className='about-text-content'>
@@ -37,8 +65,8 @@ export default function About() {
         <div className='our-barber'>
             <img src={paint} alt='paint'></img>
             <div className='nameOfBarber'>
-                <h2>Viliam</h2>
-                <h2>Stranianek</h2>
+                <h2>Náš barber</h2>
+                <h2>Viliam Stranianek</h2>
             </div>
         </div>
     </div>

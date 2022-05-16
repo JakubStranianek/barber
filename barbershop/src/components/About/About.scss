@@ -24,6 +24,50 @@
         }
     }
 
+    .model {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0);
+        z-index: 999;
+        transition: opacity .4s ease, visibility .4s ease, transform .8s easy-in-out;
+    
+        img {
+            width: auto;
+            max-width: 100%;
+            max-height: 80vh;
+            display: block;
+            padding: 20px 0 20px;
+            margin: 0 auto;
+        }
+    }
+
+    .model.open {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: white;
+                font-size: 50px;
+            }
+
+            svg:hover {
+                color: black;
+            }
+    }
+
     .small-gallery {
         margin-top: 80px;
         width: 85%;
@@ -34,11 +78,13 @@
         img {
             width: 400px;
             box-shadow: 4px 4px 10px;
+            margin-bottom: 40px;
         }
 
         img:hover {
             opacity: 0.5;
-            transition: transform .5s ease-in-out;
+            transition: opacity .3s ease-in-out;
+            cursor: pointer;
         }
     }
 
@@ -55,21 +101,15 @@
     }
 
     .our-barber {
-        margin-top: 240px;
+        margin-top: 100px;
         width: 85%;
-        height: 490px;
-        background-color: rgba(0,0,0, 0.5);
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
 
         img {
-            position: absolute;
             width: 700px;
-            bottom: 0;
         }
 
         .nameOfBarber {
@@ -77,20 +117,24 @@
             h2 {
                 position: relative;
                 margin: 0;
-                color: whitesmoke;
+                color: rgba(0,0,0, 0.8);
                 text-transform: uppercase;
                 font-weight: 300;
                 z-index: 99;
             }
 
             h2:nth-Child(1) {
-                font-size: 200px;
+                font-size: 145px;
                 letter-spacing: 100px;
+                font-weight: 500;
             }
+           
 
             h2:nth-Child(2) {
-                font-size: 100px;
-                letter-spacing: 70px;
+                margin-top: 20px;
+                font-size: 84px;
+                letter-spacing: 45px;
+                text-align: right;
             }
         }
     }
@@ -106,7 +150,6 @@
             
     
             .line {
-               
             }
     
             h3 {
@@ -114,15 +157,8 @@
         }
     
         .small-gallery {
-            
-    
             img {
                 width: 350px;
-                margin-bottom: 40px;
-            }
-    
-            img:hover {
-                
             }
         }
     
@@ -135,24 +171,30 @@
         }
     
         .our-barber {
-           
-    
+           margin-top: 40px;
+            flex-direction: column;
             img {
                 width: 100%;
             }
     
             .nameOfBarber {
-    
+                flex-direction: column;
                 h2 {
                    
                 }
     
                 h2:nth-Child(1) {
-                   display: none;
+                    margin-top: 40px;
+                    font-size: 60px;
+                    text-align: center;
+                    letter-spacing: 0;
                 }
     
                 h2:nth-Child(2) {
-                   display: none;
+                    font-size: 70px;
+                    text-align: center;
+                    letter-spacing: 0;
+                    padding-bottom: 40px;
                 }
             }
         }
@@ -166,9 +208,17 @@
 @media only screen and (min-width: 768px) {}
  
 /* Big screen devices (889px and above) */
-@media only screen and (min-width: 889px) {}
+@media only screen and (max-width: 889px) {
+    .about-part .small-gallery {
+        margin-top: 80px;
+        width: 85%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+}
  
 /* Extra big screen devices (1200px and above) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     
 }

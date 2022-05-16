@@ -2,13 +2,14 @@ import React from 'react'
 import "./Contact.scss"
 import insta from "../../assets/insta-logo.png"
 import fb from "../../assets/fb-logo.png"
+import contact from "../../assets/contact.jpg"
 
 export default function Contact() {
   return (
     <div className='contactPart'>
-        <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.560403992057!2d18.738488315686855!3d49.20889827932346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47145eb419abfd5b%3A0x8a9ca3a736ef31b6!2sAlexandra%20Rudnaya%2045%2C%20010%2001%20%C5%BDilina!5e0!3m2!1ssk!2ssk!4v1652382906465!5m2!1ssk!2ssk"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10426.241611607898!2d18.740677!3d49.2088983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x751dea2c9af113b5!2sVilliz%20Barbershop!5e0!3m2!1ssk!2ssk!4v1652691041439!5m2!1ssk!2ssk"></iframe>
         <div className='photoOfBarberShop'>
-            
+            <img src={contact} alt="contactPhoto"></img>
         </div>    
 
     <div className='flexContact'>
