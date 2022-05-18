@@ -50,7 +50,7 @@ export default function About() {
             {
                 galleryData.map(index => 
                     <div className={"image" + index.id} key={"barbershop" + index.id} onClick={() => getImg(index.url)}>
-                        <img src={index.url} alt={"img" + index.id} onClick=""></img>
+                        <img src={index.url} alt={"img" + index.id}></img>
                     </div>
                 )
             }

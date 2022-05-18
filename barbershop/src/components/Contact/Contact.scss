@@ -92,9 +92,7 @@
 }
 
 @media only screen and (max-width: 889px) {
-    .photoOfBarberShop {
-        display: none;
-     }
+
 }
 
 @media only screen and (max-width: 595px) {
@@ -109,7 +107,6 @@
         }
     
         .flexContact {
-            width: 100%;
             flex-direction: column;
             .adress {
                 margin-left: 40px;
@@ -186,4 +183,8 @@
     .contactPart .photoOfBarberShop {
         display: none;
      }
+
+     .contactPart .flexContact {
+        width: 100%;
+      }
 }
