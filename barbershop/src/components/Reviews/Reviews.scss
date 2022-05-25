@@ -54,6 +54,10 @@ li.slide.selected {
     min-width: 100% !important;
 }
 
+.thumbs {
+    padding-left: 20px;
+}
+
 
 
 /* For extremely small screen devices (595px and below) */
@@ -67,6 +71,7 @@ li.slide.selected {
     
     .carousel.carousel.carousel-slider {
         overflow: hidden;
+        width: 200px;
     }
 
     .carousel.carousel-slider .control-arrow {
@@ -74,8 +79,8 @@ li.slide.selected {
         top: 70%;
         height: min-content;
         width: 40px;
-
     }
+
 }
  
 /* Small screen devices (600px and above) */
