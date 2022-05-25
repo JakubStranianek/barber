@@ -79,7 +79,7 @@
 }
 
 /* Big screen devices (889px and above) */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1441px) {
     .home-bg .mainContentHome #mainLogo {
         width: 500px;
     }
@@ -89,6 +89,7 @@
 @media only screen and (max-width: 595px) {
     .home-bg {
         .header-part {
+            padding-top: 20px;
         }
 
         .mainContentHome {

@@ -74,7 +74,7 @@ export default function Reviews() {
   return (
     <div className='reviewPart'>
         <Carousel 
-        width={window.innerWidth > 595 ? 600 : 400}
+        width={window.innerWidth > 595 ? 500 : 330}
         centerMode={true}
         infiniteLoop={window.innerWidth > 595 ? true : false}
         emulateTouch={window.innerWidth > 595 ? true : false}

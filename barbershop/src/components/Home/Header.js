@@ -12,12 +12,20 @@ export default function Header() {
       setToggleMenu(!toggleMenu);
   } 
   
+  const handleDeleteResponsive = () => {
+    if (window.innerWidth <= 889) {
+      document.getElementById("navBar").classList.remove("responsive");
+      document.getElementById("navBar").classList.remove("show");
+    }
+  }
+
+  window.addEventListener("resize", handleDeleteResponsive)
   return (
     <div className='headerWrapper'>
         <img src={Logo} alt="headerLogo"></img>
 
         <nav>
-            <ul className={toggleMenu ? "responsive show" : ""}>
+            <ul id="navBar" className={toggleMenu ? "responsive show" : ""}>
                 <li><Link to="/" onClick={() => window.scrollTo(0,0)}>DOMOV</Link></li>
                 <li><Link to="/o-nás" onClick={() => document.querySelector(".about-part").scrollIntoView({behavior: "smooth"})}>O NÁS</Link></li>
                 <li><Link to="/cenník" onClick={() => document.querySelector(".priceList-part").scrollIntoView({behavior: "smooth"})}>CENNÍK</Link></li>
