@@ -67,7 +67,7 @@ export default function About() {
         </div>
 
         <div className='video'>
-            <iframe src="https://player.vimeo.com/video/713171409?h=9a25e98914&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="Villiz Barbershop"></iframe>
+            <iframe src="https://player.vimeo.com/video/716338390?h=376f3d58aa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="Villiz Barbershop"></iframe>
             </div>
         <script src="https://player.vimeo.com/api/player.js"></script>
     </div>

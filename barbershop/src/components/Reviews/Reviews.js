@@ -60,7 +60,7 @@ const images = [
         id: 8, 
         url: guy8,
         boyName: "Jakub",
-        reviewText: "Vždy maximálna spokojnosť. Každý jeden strih je niečím jedinečný a ja potom spokojne môžem ísť von so psíkom 🦮👧🏻 Pekný deň prajem"
+        reviewText: "Vždy maximálna spokojnosť. Každý jeden strih je niečím jedinečný. Výborná komunikácia a veľmi príjemné prostredia. 10/10"
     },
     {
         id: 9, 
