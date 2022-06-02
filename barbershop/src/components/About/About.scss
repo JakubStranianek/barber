@@ -110,34 +110,10 @@
         flex-wrap: wrap;
 
         img {
-            width: 700px;
+            content: url("../../assets/paint.png");
+            width: 80%;
         }
 
-        .nameOfBarber {
-
-            h2 {
-                position: relative;
-                margin: 0;
-                color: rgba(0,0,0, 0.8);
-                text-transform: uppercase;
-                font-weight: 300;
-                z-index: 99;
-            }
-
-            h2:nth-Child(1) {
-                font-size: 80px;
-                letter-spacing: 20px;
-                font-weight: 500;
-            }
-           
-
-            h2:nth-Child(2) {
-                margin-top: 20px;
-                font-size: 80px;
-                letter-spacing: 20px;
-                text-align: right;
-            }
-        }
     }
 
     .video {
@@ -184,33 +160,9 @@
         .our-barber {
            margin-top: 40px;
             flex-direction: column;
-            img {
-                width: 100%;
-            }
-    
-            .nameOfBarber {
-                flex-direction: column;
-                h2 {
-                   
-                }
-    
-                h2:nth-Child(1) {
-                    margin-top: 40px;
-                    font-size: 60px;
-                    text-align: center;
-                    letter-spacing: 0;
-                }
-    
-                h2:nth-Child(2) {
-                    font-size: 70px;
-                    text-align: center;
-                    letter-spacing: 0;
-                    padding-bottom: 40px;
-                }
-            }
         }
         .video {
-            height: 200px;
+            height: 27vh;
         }
     }
 }
@@ -234,6 +186,10 @@
       .video {
         margin-top: 20px;
         height: 400px;
+    }
+
+    .about-part .our-barber img {
+        content: url("../../assets/paintRespon.png");
     }
 }
  

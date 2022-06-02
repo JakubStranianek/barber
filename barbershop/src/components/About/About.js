@@ -63,11 +63,7 @@ export default function About() {
         </div>
 
         <div className='our-barber'>
-            <img src={paint} alt='paint'></img>
-            <div className='nameOfBarber'>
-                <h2>Náš barber</h2>
-                <h2>Viliam Stranianek</h2>
-            </div>
+            <img alt='paint'/>
         </div>
 
         <div className='video'>
