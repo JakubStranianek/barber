@@ -58,7 +58,12 @@ export default function About() {
 
         <div className='about-text-content'>
             <p>
-            Sme novootvorený barbershop v krásnom tichom prostredí mesta Žilina, kde panuje dobrá náladička a pohoda. Služby ktoré ponúkame sú luxusné pánske strihy, úpravy brady, voskovanie, farbenie vlasov a mnoho ďalších detailov. V cene z ponúkaných služieb si môžeš dopriať kávičku alebo ak si nechal doma auto tak kvalitný alkohol pre chlapa. Aktuálne máme obsadené jedno kreslo s Villiz Barberom. Druhé kreslo comming soon. 
+            Novootvorený barbershop v mestskej časti Žilina Bôrik na ulici Alexandra Rudnaya 45. 
+            Príď si oddýchnuť a zresetovať po náročnom dni do nášho holičstva Villiz Barbershop. 
+            Ponúkame ti kvalitný pánsky strih, úpravu brady a mnoho ďalšieho. Veľkou výhodou je bezplatné 
+            parkovanie takmer pred dverami nášho barbershopu. Samozrejmosťou je že ku každej našej službe ti
+            bude dopriata kvalitná kavička, chladený nápoj alebo pohárik kvalitného rumu. Momentálne sa 
+            o teba postará Villiz Barber, ktorý zároveň aj náš barbershop celý zastrešuje. Tešíme sa na teba.
             </p>
         </div>
 
