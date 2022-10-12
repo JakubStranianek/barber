@@ -31,6 +31,7 @@ export default function Home() {
     <div className="home-bg">
       <div id="headerNav" className="header-part" >
         <Header></Header>
+        <h1 className="none">vždy strih odporúčam</h1>
       </div>
     
     <div className="mainContentHome">
