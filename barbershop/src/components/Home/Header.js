@@ -33,7 +33,6 @@ export default function Header() {
                 <li><Link to="/kontakt" onClick={() => document.querySelector(".contactPart").scrollIntoView({behavior: "smooth"})}>KONTAKT</Link></li>
             </ul>
         </nav>
-
         <MenuIcon onClick={handleToggle}/>
     </div>
   )
