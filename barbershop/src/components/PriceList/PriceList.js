@@ -8,19 +8,19 @@ export default function PriceList() {
       key: 1,
       id: ".01",
       type: "Pánsky strih",
-      price: "18€",
+      price: "20€",
     },
     {
       key: 2,
       id: ".02",
       type: "Pánsky strih, úprava fúzov a brady",
-      price: "28€",
+      price: "30€",
     },
     {
       key: 3,
       id: ".03",
       type: "Úprava brady",
-      price: "13€",
+      price: "15€",
     },
     {
       key: 4,
@@ -32,7 +32,7 @@ export default function PriceList() {
       key: 5,
       id: ".05",
       type: "Oholenie hlavy, úprava fúzov a brady",
-      price: "26€",
+      price: "30€",
     },
   ];
 
@@ -57,6 +57,7 @@ export default function PriceList() {
         ))}
       </div>
 
+            <p>Cenník platný od 1.12.2022</p>
       <div className="line"></div>
     </div>
   );

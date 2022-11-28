@@ -3,6 +3,7 @@ import Header from "./Header.js";
 import "./Home.scss";
 import MainLogo from "../../assets/logoMain.png";
 import { Link } from "react-router-dom";
+import bgVideo from "../../assets/bgVideo.mp4"
 
 export default function Home() {
   var lastScrollTop = 0;
@@ -29,6 +30,9 @@ export default function Home() {
 
   return (
     <div className="home-bg">
+
+<video src={bgVideo} autoPlay muted loop></video>
+      
       <div id="headerNav" className="header-part" >
         <Header></Header>
         <h1 className="none">vždy strih odporúčam villiz barber villizbarbershop barber žilina zilina</h1>
