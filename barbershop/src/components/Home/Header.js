@@ -29,6 +29,7 @@ export default function Header() {
                 <li><Link to="/" onClick={() => window.scrollTo(0,0)}>DOMOV</Link></li>
                 <li><Link to="/o-nás" onClick={() => document.querySelector(".about-part").scrollIntoView({behavior: "smooth"})}>O NÁS</Link></li>
                 <li><Link to="/cenník" onClick={() => document.querySelector(".priceList-part").scrollIntoView({behavior: "smooth"})}>CENNÍK</Link></li>
+                <li><Link to="/galeria" onClick={() => document.querySelector(".gallery-part").scrollIntoView({behavior: "smooth"})}>GALÉRIA</Link></li>
                 <li><Link to="/recenzie" onClick={() => document.querySelector(".reviewPart").scrollIntoView({behavior: "smooth"})}>RECENZIE</Link></li>
                 <li><Link to="/kontakt" onClick={() => document.querySelector(".contactPart").scrollIntoView({behavior: "smooth"})}>KONTAKT</Link></li>
             </ul>

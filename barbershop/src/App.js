@@ -5,6 +5,7 @@ import PriceList from './components/PriceList/PriceList';
 import Reviews from './components/Reviews/Reviews';
 import Contact from './components/Contact/Contact';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import GalleryImage from './components/Gallery/GalleryImage';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <HomeSection></HomeSection>
       <About></About>
+      <GalleryImage />
       <PriceList></PriceList>
       <Reviews></Reviews>
       <Contact></Contact>
@@ -22,6 +24,7 @@ function App() {
           <Route path="/" />
           <Route path="/o-nás" />
           <Route path="/cenník" />
+          <Route path="/gallery" />
           <Route path="/recenzie" />
           <Route path="/kontakt" />
           <Route path="*" element={<Navigate to="/"/>} />

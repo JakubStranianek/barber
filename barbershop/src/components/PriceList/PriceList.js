@@ -32,7 +32,7 @@ export default function PriceList() {
       key: 5,
       id: ".05",
       type: "Oholenie hlavy, úprava fúzov a brady",
-      price: "30€",
+      price: "28€",
     },
   ];
 
