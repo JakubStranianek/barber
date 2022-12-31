@@ -31,8 +31,16 @@ export default function Home() {
   return (
     <div className="home-bg">
 
-<video src={bgVideo} autoPlay muted loop></video>
-      
+    <div className='vid' dangerouslySetInnerHTML={{ __html: `
+          <video
+            loop
+            muted
+            autoplay
+            playsinline
+            src="${bgVideo}"
+          />,
+        ` }}></div>
+    
       <div id="headerNav" className="header-part" >
         <Header></Header>
         <h1 className="none">vždy strih odporúčam villiz barber villizbarbershop barber žilina zilina</h1>
